@@ -1,12 +1,15 @@
 <view class="wa-list">
     <!--<view class="title text-center">mark</view> --> 
     {{res.msg}}
-    
+    <view wx:for="{{res.business.business}}" >
+          {{item.title}}
+      
+      </view> 
     
     <view class="wa-item">
       <text class="pull-right ion-chevron-right"></text>
       <text class="pull-right wa-mark wa-primary">11</text>
-      <view wx:for="{{res.business.discuss}}" >
+      <view wx:for="{{res.business.business}}" >
           {{item.title}}
       
       </view>
